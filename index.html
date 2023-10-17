@@ -5,24 +5,27 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1 id="counter">0</h1>
-    <button id="clickButton">Cliquez ici</button>
+    <div class="container">
+        <h1 id="counter" class="text content">0</h1>
+        <button id="clickButton" class="button content">Cliquez ici</button>
 
-    <script>
-        // Récupérez l'élément du compteur et le bouton
-        var counter = document.getElementById("counter");
-        var clickButton = document.getElementById("clickButton");
+        <script>
+            // Récupérez l'élément du compteur et le bouton
+            var counter = document.getElementById("counter");
+            var clickButton = document.getElementById("clickButton");
 
-        // Initialise le compteur
-        var count = 0;
+            // Initialise le compteur
+            var count = 0;
 
-        // Ajoute un gestionnaire d'événement au bouton
-        clickButton.addEventListener("click", function() {
-            // Incrémente le compteur à chaque clic
-            count++;
-            // Met à jour le texte du compteur
-            counter.innerHTML = count;
-        });
+            // Ajoute un gestionnaire d'événement au bouton
+            clickButton.addEventListener("click", function() {
+                // Incrémente le compteur à chaque clic
+                count++;
+                // Met à jour le texte du compteur
+                counter.innerHTML = count;
+            });
     </script>
+    </div>
+    
 </body>
 </html>
